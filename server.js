@@ -32,7 +32,7 @@ app.get("/api/timestamp", function(req, res) {
 });
 
 //
-app.get("/api/timestamp/:date_string?", function(req, res) {
+app.get("/api/timestamp/:date_string", function(req, res) {
   const dateString = req.params.date_string;
   const date = new Date(Number(dateString));
   unixDate = Math.floor(date);
